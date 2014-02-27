@@ -1,5 +1,7 @@
 import tweepy
+
 from tweepy.streaming import StreamListener
+from auth import authorize
 
 teamAName = "Dawson"
 teamBName = "Friendswood"
@@ -25,14 +27,7 @@ class StdOutListener(StreamListener):
 	def on_error(self, status):
 		return True
 
-c_key = 
-c_secret = 
-
-access_token = 
-access_token_secret = 
-
 l = StdOutListener()
-auth = tweepy.OAuthHandler(c_key, c_secret)
-auth.set_access_token(access_token, access_token_secret)
+auth = authorize() 
 stream = tweepy.Stream(auth, l)
 stream.filter(track=['dawson'])
