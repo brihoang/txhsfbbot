@@ -25,11 +25,11 @@ class StdOutListener(StreamListener):
 	def on_error(self, status):
 		return True
 
-c_key = "RYfMX1jo5tYVqAnSagaxmQ"
-c_secret = "VvsK1GgUd8IuFFuGRKUzWudHpLcrPlef6J585ZOkt0"
+c_key = 
+c_secret = 
 
-access_token = "1054281577-ohVrfLs0A65UYIfhnGhgxLKWMptgDIPrYPG6CTn"
-access_token_secret = "CeCciJudoW2uFCvSWWRx2mvqhKRAxSPENNazZpXiHp1Zr"
+access_token = 
+access_token_secret = 
 
 l = StdOutListener()
 auth = tweepy.OAuthHandler(c_key, c_secret)
