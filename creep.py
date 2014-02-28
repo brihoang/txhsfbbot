@@ -7,14 +7,12 @@ teamAName = "Dawson"
 teamBName = "Friendswood"
 teamAScore = 0
 teamBScore = 0
-verified_A_score = 0
-verified_B_score = 0
 possible_scores = {}
 
 
 
 def VERIFICATION_RESET():
-	return 3
+	return 2
 
 def verify():
 	global possible_scores
@@ -44,8 +42,8 @@ def processScore(game_info):
 	verify()
 
 def printScore():
-	print teamAName + " " + str(verified_A_score)
-	print teamBName + " " + str(verified_B_score)
+	print teamAName + " " + str(teamAScore)
+	print teamBName + " " + str(teamBScore)
 
 class StdOutListener(StreamListener):
 	def on_status(self, status):
